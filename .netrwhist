@@ -1,3 +1,10 @@
 let g:netrw_dirhistmax  =10
+<<<<<<< HEAD
 let g:netrw_dirhist_cnt =1
 let g:netrw_dirhist_1='/home/wolax/.config/nvim'
+=======
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/williamolax/Documents/Projets/Mini_Facebook/src'
+let g:netrw_dirhist_2='/Users/williamolax/Documents/Projets/Mini_Facebook/src/models'
+let g:netrw_dirhist_1='/Users/williamolax/Documents/Projets/Mini_Facebook'
+>>>>>>> 5ab1392f6b94d89346f173c05bdc294e1f5739cd

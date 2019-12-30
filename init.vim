@@ -8,18 +8,41 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdtree'
+Plug 'pangloss/vim-javascript'
+Plug 'briancollins/vim-jst'
+Plug 'nikvdp/ejs-syntax'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'takac/vim-hardtime'
 " Fin de la liste : Les plugins deviennent utilisables après ca
 call plug#end()
 
 colorscheme onedark
 syntax enable
-set number "Line Numbers
-set tabstop=3 "Espaces pour chaque tab
+set softtabstop=3 shiftwidth=3 tabstop=3 expandtab "3 Espaces pour chaque tab
 set t_Co=256
+set relativenumber
+set nonumber
+
+
+"""Un cauchemar pour apprendre les bonnes methodes"""
+let g:hardtime_default_on = 1
+""" control map parameters
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 """ AirLine Customization
 
 let g:airline_theme='luna'
 let g:airline_powerline_fonts = 1
+
+"""Nerd Tree Setup"""
+
+autocmd vimenter * NERDTree
+
+""" ejs color  
+au BufNewFile,BufRead *.js.erb setlocal filetype=javascript
 """ coc intellisense for neovim 
 
 " if hidden is not set, TextEdit might fail.
